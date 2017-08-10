@@ -1,0 +1,10 @@
+#logo a img {
+  margin-top: 15px;
+  height: 50px !important; }
+
+footer .footer-content ul.footer-links-list {
+  list-style: none;
+  padding: 0; }
+
+footer .footer-content .copyright-text {
+  text-transform: none; }
