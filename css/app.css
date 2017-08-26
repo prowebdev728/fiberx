@@ -566,6 +566,7 @@ section {
         justify-content: center; }
   .property-management .property-item .row .content-1 {
     padding: 35px 40px 35px 0;
+    width: 100%;
     color: #fff; }
     .property-management .property-item .row .content-1 ul {
       padding: 16px 0 16px 0;
@@ -586,7 +587,14 @@ section {
           font-size: 14px;
           color: #fff; }
   .property-management .property-item .row .content-2 {
-    padding: 70px 0; }
+    padding: 70px 0;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center; }
   .property-management .property-item .row .mask-content-1,
   .property-management .property-item .row .mask-content-2 {
     width: 100vw;
@@ -626,6 +634,138 @@ section {
     .property-management .menu-items .icon-box p {
       margin: 0;
       line-height: 1.5; }
+
+.property-management .residential-mdu .title {
+  padding: 25px 0;
+  border-top: 1px solid #eee; }
+  .property-management .residential-mdu .title h3 {
+    margin: 0; }
+  .property-management .residential-mdu .title .title-underline {
+    width: 80px;
+    border: 1px solid #333; }
+
+.property-management .residential-mdu .residential-mdu-content .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .property-management .residential-mdu .residential-mdu-content .row > div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .property-management .residential-mdu .residential-mdu-content .row .content-1 {
+    padding: 70px 45px 70px 0;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #7b7b7b; }
+  .property-management .residential-mdu .residential-mdu-content .row .content-2 {
+    padding: 30px 0 30px 10px;
+    width: 100%;
+    color: #fff; }
+    .property-management .residential-mdu .residential-mdu-content .row .content-2 h4 {
+      color: #fff; }
+    .property-management .residential-mdu .residential-mdu-content .row .content-2 ul {
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      margin-left: 15px; }
+      .property-management .residential-mdu .residential-mdu-content .row .content-2 ul li {
+        padding: 5px;
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 600; }
+        .property-management .residential-mdu .residential-mdu-content .row .content-2 ul li:before {
+          content: "\f00c";
+          margin-left: -20px;
+          margin-top: 3px;
+          position: absolute;
+          font-family: fontawesome;
+          font-size: 14px;
+          color: #fff; }
+  .property-management .residential-mdu .residential-mdu-content .row .mask-content-1,
+  .property-management .residential-mdu .residential-mdu-content .row .mask-content-2 {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -99; }
+  .property-management .residential-mdu .residential-mdu-content .row .mask-content-1 {
+    right: 0;
+    background-color: #fafafa; }
+  .property-management .residential-mdu .residential-mdu-content .row .mask-content-2 {
+    left: 0;
+    background-color: #cf1b22; }
+
+.property-management .pay-items {
+  padding: 18px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .property-management .pay-items .icon-box {
+    width: 240px;
+    margin: 18px 15px; }
+    .property-management .pay-items .icon-box .icon {
+      width: 96px;
+      height: 96px;
+      margin-bottom: 16px; }
+      .property-management .pay-items .icon-box .icon i {
+        font-size: 35px;
+        line-height: 94px; }
+    .property-management .pay-items .icon-box h3 {
+      margin: 0; }
+    .property-management .pay-items .icon-box:nth-of-type(1) .icon i {
+      background: url(../images/app/free-icon.png) no-repeat center center; }
+    .property-management .pay-items .icon-box:nth-of-type(2) .icon i {
+      background: url(../images/app/cupon-icon.png) no-repeat center center; }
+    .property-management .pay-items .icon-box:nth-of-type(3) .icon i {
+      background: url(../images/app/increase-your-income-icon.png) no-repeat center center; }
+
+.property-management .cost-comparison {
+  background-color: #fafafa; }
+  .property-management .cost-comparison .title {
+    padding: 25px 0;
+    border-top: 1px solid #eee; }
+    .property-management .cost-comparison .title h3 {
+      margin: 0; }
+    .property-management .cost-comparison .title .title-underline {
+      width: 80px;
+      border: 1px solid #333; }
+  .property-management .cost-comparison .cost-comparison-content {
+    padding: 0 0 45px 0; }
+    .property-management .cost-comparison .cost-comparison-content .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .property-management .cost-comparison .cost-comparison-content .row > div {
+        padding: 40px 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
+      .property-management .cost-comparison .cost-comparison-content .row > div:nth-of-type(1) {
+        padding: 25px 0;
+        border: 2px solid #cf1b22; }
 
 .property-management .residential-city-1 {
   height: 372px;
