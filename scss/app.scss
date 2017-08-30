@@ -1036,49 +1036,309 @@ section {
 		}
 	}
 
-
-
-	.residential-city-1 {
-		height: 372px;
-		font-size: 22px;
+	.more-info {
+		padding: 12px 0;
+		background-color: #ce2127;
 		color: #fff;
 
-		.container {
-			height: 100%;
-			display: flex;
-			align-content: center;
-			flex-wrap: wrap;
+		.row {
+			div:nth-of-type(1) {
+				padding: 12px 0;
 
-			div {
-				width: 100% !important;
-				padding: 18px 0;
-				text-align: center;
+				@media (max-width: 991px) {
+					text-align: center;
+				}
+			}
+			div:nth-of-type(2) {
+				display: flex;
+				justify-content: center;
+				padding: 12px 0;
+			}
+		}
 
-				button {
-					padding: 27px 67px;
-					font-size: 24px;
-					font-weight: 400;
-					border-radius: 0;
+		h3,
+		p {
+			color: #fff;
+			margin: 0;
+		}
+
+		button {
+			padding: 27px 67px;
+			font-size: 24px;
+			font-weight: 400;
+			border-radius: 0;
+			background-color: #fff;
+			color: #ce2127;
+		}
+	}
+
+	.list-info {
+
+		.icon-box {
+			padding: 25px 20px 0 0;
+
+			.icon {
+				width: 96px;
+				height: 96px;
+				margin: 0;
+
+				i {
+					background: url(../images/app/dolor-icon.png) no-repeat center center;
 				}
 			}
 		}
 
-		@media (max-width: 767px) {
-			height: 180px;
+		.row {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
 
-			.container {
-				div {
-					padding: 10px 0;
+			@media (max-width: 767px) {
+				flex-wrap: wrap;
+			}
+
+			div:nth-of-type(2) {
+				padding: 25px 20px 0 20px;
+
+				p {
+					margin: 0;
+					font-size: 17px;
+					line-height: 1.7;
+
+					&:first-child {
+						font-weight: bold;
+						border: none;
+					}
+					&:last-child {
+						padding-bottom: 25px;
+						border-bottom: 1px solid #d7d7d7;
+					}
+				}
+			}
+
+			&:nth-of-type(1) {
+				.icon-box {
+					.icon {
+						i {
+							background: url(../images/app/dolor-icon.png) no-repeat center center;
+						}
+					}
+				}
+			}
+			&:nth-of-type(2) {
+				.icon-box {
+					.icon {
+						i {
+							background: url(../images/app/2wifi-icon.png) no-repeat center center;
+						}
+					}
+				}
+			}
+			&:nth-of-type(3) {
+				.icon-box {
+					.icon {
+						i {
+							background: url(../images/app/graph-icon.png) no-repeat center center;
+						}
+					}
 				}
 			}
 		}
 	}
 
-	.residential-internet {
+	.property-city-1 {
+		height: 372px;
+		font-size: 22px;
+		color: #fff;
+
+		@media (max-width: 767px) {
+			height: 180px;
+		}
+	}
+
+	.commercial-building {
+		.row {
+			display: flex;
+			align-items: stretch;
+			flex-wrap: wrap;
+
+			& > div {
+				display: flex;
+				justify-content: center;
+			}
+
+			.content-1 {
+				padding: 35px 40px 35px 0;
+				width: 100%;
+
+				h3 {
+					margin: 0;
+				}
+				.title-underline {
+					width: 80px;
+					height: 2px;
+					border: 1px solid;
+					margin-bottom: 20px;
+				}
+				
+				ul {
+					padding: 16px 0 16px 0;
+					margin: 0;
+					text-align: left;
+					margin-left: 15px;
+
+					li {
+						padding: 10px;
+						font-size: 17px;
+						line-height: 1.5;
+						font-weight: 600;
+
+						&:before {
+							content: "\f00c";
+							margin-left: -25px;
+							margin-top: 3px;
+					    position: absolute;
+					    font-family: fontawesome;
+					    font-size: 14px;
+					    color: #cf1b22;
+						}
+					}
+				}
+			}
+			.content-2 {
+				padding: 30px 0 40px 0;
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			.mask-content-1,
+			.mask-content-2 {
+				width: 100vw;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				z-index: -99;
+			}
+			.mask-content-1 {
+				right: 0;
+			}
+			.mask-content-2 {
+				left: 0;
+			}
+		}
+	}
+
+	.property-tv {
+
+		.row:nth-of-type(1) {
+			display: flex;
+			align-items: stretch;
+			flex-wrap: wrap;
+
+			& > div {
+				display: flex;
+				justify-content: center;
+			}
+
+			.content-1 {
+				padding: 35px 40px 35px 0;
+				
+				h3 {
+					margin: 0;
+					color: #fff;
+				}
+				.title-underline {
+					width: 40px;
+					height: 2px;
+					border: 1px solid #fff;
+					margin-bottom: 25px;
+				}
+				p {
+					font-size: 16px;
+					line-height: 1.5;
+					color: #fff;
+				}
+			}
+			.content-2 {
+				padding: 70px 0;
+			}
+
+			.mask-content-1,
+			.mask-content-2 {
+				width: 100vw;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				z-index: -99;
+			}
+			.mask-content-1 {
+				right: 0;
+				background-color: #cf1b22;
+			}
+			.mask-content-2 {
+				left: 0;
+				background-color: #fafafa;
+			}
+		}
+	}
+
+	.commercial-items {
+		padding: 22px 0;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+
+		.icon-box {
+			width: 240px;
+			margin: 18px 15px;
+
+			.icon {
+				width: 96px;
+				height: 96px;
+				margin-bottom: 16px;
+
+				i {
+					font-size: 35px;
+					line-height: 94px;
+				}
+			}
+
+			h3 {
+				margin: 0;
+			}
+			&:nth-of-type(1) {
+				.icon {
+						i {
+							background: url(../images/app/over-air-icon.png) no-repeat center center;
+						}
+					}
+			}
+			&:nth-of-type(2) {
+				.icon {
+						i {
+							background: url(../images/app/hospitality-icon.png) no-repeat center center;
+						}
+					}
+			}
+			&:nth-of-type(3) {
+				.icon {
+						i {
+							background: url(../images/app/dish-satellite-icon.png) no-repeat center center;
+						}
+					}
+			}
+		}
+	}
+
+	.managed-wireless {
+		border-top: 1px solid #e5e5e5;
 		.title {
 			font-size: 25px;
 			font-weight: 600;
-			padding: 45px 0 10px 0;
+			padding: 50px 0 10px 0;
 		}
 		.title-underline {
 			width: 78px;
@@ -1086,7 +1346,32 @@ section {
 			border: 1px solid #333;
 		}
 		.description {
-			padding-top: 20px;
+			padding-top: 48px;
+			font-size: 16px;
+			font-weight: 600;
+			letter-spacing: 0.6px;
+			line-height: 1.5;
+			text-align: center;
+			color: #7b7b7b;
+		}
+	}
+
+	.ip-access {
+		background-color: #f5f5f5;
+		border-top: 1px solid #e5e5e5;
+
+		.title {
+			font-size: 25px;
+			font-weight: 600;
+			padding: 50px 0 10px 0;
+		}
+		.title-underline {
+			width: 78px;
+			height: 2px;
+			border: 1px solid #333;
+		}
+		.description {
+			padding-top: 48px;
 			font-size: 16px;
 			font-weight: 600;
 			letter-spacing: 0.6px;
@@ -1097,178 +1382,75 @@ section {
 
 		.items {
 			padding: 25px 0 0 0;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
 
 			.icon-box {
-				width: 252px;
-				padding: 47px 8px 30px 8px;
-				margin: 55px 0;
+				margin-left:20px;
+				margin-right:20px;
+			}
+		}
+	}
 
-				.icon {
-					position: absolute;
-					top: -32px;
-					left: 50%;
-					margin-left: -32px;
-					background-color: white;
-				}
+	.property-video {
+		max-height: 531px !important;
+	}
 
-				h5 {
-					margin: 0 0 10px 0;
-					font-size: 14px;
-					font-weight: bold;
-					line-height: 1;
-				}
+	.xiber-home {
+		border-top: 1px solid #e5e5e5;
+		.title {
+			font-size: 25px;
+			font-weight: 600;
+			padding: 50px 0 10px 0;
+		}
+		.title-underline {
+			width: 78px;
+			height: 2px;
+			border: 1px solid #333;
+		}
+		.description {
+			padding-top: 48px;
+			font-size: 16px;
+			font-weight: 600;
+			letter-spacing: 0.6px;
+			line-height: 1.5;
+			text-align: center;
+			color: #7b7b7b;
+		}
 
-				h3 {
-					margin: 0 0 18px 0;
-					font-size: 20px;
-					line-height: 1;
+		.items {
+			padding: 25px 0 0 0;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
 
-					small {
-						color: #333;
-					}
-				}
+			.icon-box {
+				margin-left:20px;
+				margin-right:20px;
 
-				.title-underline {
-					width: 55px;
-					margin-bottom: 16px;
-				}
-
-				ul {
-					margin: 0;
-					margin-left: 15px;
-
-					li {
-						padding: 6px 0;
-						font-size: 13px;
-
-						&:before {
-							margin-left: -10px;
-					    font-size: 12px;
-						}
-					}
-				}
-
-				&:nth-of-type(1) {
-					.icon {
-						i {
-							background: url(../images/app/50mbps-symmetrical.png) no-repeat center 30%;
-						}
-					}
-				}
-				&:nth-of-type(2) {
-					.icon {
-						i {
-							background: url(../images/app/100mbps-symmetrical.png) no-repeat center 30%;
-						}
-					}
-				}
 				&:nth-of-type(3) {
 					.icon {
 						i {
-							background: url(../images/app/500mbps-symmetrical.png) no-repeat center 30%;
+							background: url(../images/app/tenant-icon.png) no-repeat center 50%;
 						}
 					}
 				}
 				&:nth-of-type(4) {
 					.icon {
 						i {
-							background: url(../images/app/1000mbps-symmetrical.png) no-repeat center 30%;
+							background: url(../images/app/home-icon.png) no-repeat center 40%;
+						}
+					}
+				}
+				&:nth-of-type(5) {
+					.icon {
+						i {
+							background: url(../images/app/integration-icon.png) no-repeat center 50%;
 						}
 					}
 				}
 			}
 		}
-
-		.service-title {
-			padding: 24px 0;
-			font-size: 24px;
-			background-color: #cf1b22;
-			color: #fff;
-			text-align: center;
-		}
-
-		ul.service-features {
-			padding: 16px 0 50px 0;
-			margin: 0;
-			text-align: left;
-			margin-left: 15px;
-
-			li {
-				padding: 7px;
-				font-size: 16px;
-				line-height: 1.5;
-				font-weight: 600;
-
-				&:before {
-					content: "\f00c";
-					margin-left: -22px;
-					margin-top: 3px;
-			    position: absolute;
-			    font-family: fontawesome;
-			    font-size: 14px;
-			    color: #cf1b22;
-				}
-			}
-		}
 	}
-
-	.residential-city-2 {
-		height: 399px;
-		font-size: 22px;
-		color: #fff;
-
-		.container {
-			height: 100%;
-			display: flex;
-			align-content: center;
-			flex-wrap: wrap;
-
-			&>div {
-				width: 100% !important;
-				text-align: center;
-				padding: 18px 0;
-				
-				&:nth-of-type(2) {
-					padding: 0;
-				}
-				&:nth-of-type(3) {
-					padding: 35px 0;
-					font-size: 15px;
-					font-style: italic;
-					text-align: center;
-				}
-
-				button {
-					padding: 27px 67px;
-					font-size: 24px;
-					font-weight: 400;
-					border-radius: 0;
-				}
-			}
-
-			.title-underline {
-				width: 78px;
-				height: 2px;
-				padding: -18px 0;
-				margin: auto;
-				border: 1px solid #fff;
-			}
-		}
-
-		@media (max-width: 767px) {
-			height: auto;
-			padding: 20px 0;
-
-			.container {
-				&>div {
-					padding: 10px 0;
-					
-					&:nth-of-type(3) {
-						padding: 15px 0;
-					}
-				}
-			}
-		}
-	}
-	
 }

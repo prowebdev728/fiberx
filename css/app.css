@@ -767,161 +767,297 @@ section {
         padding: 25px 0;
         border: 2px solid #cf1b22; }
 
-.property-management .residential-city-1 {
+.property-management .more-info {
+  padding: 12px 0;
+  background-color: #ce2127;
+  color: #fff; }
+  .property-management .more-info .row div:nth-of-type(1) {
+    padding: 12px 0; }
+    @media (max-width: 991px) {
+      .property-management .more-info .row div:nth-of-type(1) {
+        text-align: center; } }
+  .property-management .more-info .row div:nth-of-type(2) {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 12px 0; }
+  .property-management .more-info h3,
+  .property-management .more-info p {
+    color: #fff;
+    margin: 0; }
+  .property-management .more-info button {
+    padding: 27px 67px;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 0;
+    background-color: #fff;
+    color: #ce2127; }
+
+.property-management .list-info .icon-box {
+  padding: 25px 20px 0 0; }
+  .property-management .list-info .icon-box .icon {
+    width: 96px;
+    height: 96px;
+    margin: 0; }
+    .property-management .list-info .icon-box .icon i {
+      background: url(../images/app/dolor-icon.png) no-repeat center center; }
+
+.property-management .list-info .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media (max-width: 767px) {
+    .property-management .list-info .row {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  .property-management .list-info .row div:nth-of-type(2) {
+    padding: 25px 20px 0 20px; }
+    .property-management .list-info .row div:nth-of-type(2) p {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.7; }
+      .property-management .list-info .row div:nth-of-type(2) p:first-child {
+        font-weight: bold;
+        border: none; }
+      .property-management .list-info .row div:nth-of-type(2) p:last-child {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #d7d7d7; }
+  .property-management .list-info .row:nth-of-type(1) .icon-box .icon i {
+    background: url(../images/app/dolor-icon.png) no-repeat center center; }
+  .property-management .list-info .row:nth-of-type(2) .icon-box .icon i {
+    background: url(../images/app/2wifi-icon.png) no-repeat center center; }
+  .property-management .list-info .row:nth-of-type(3) .icon-box .icon i {
+    background: url(../images/app/graph-icon.png) no-repeat center center; }
+
+.property-management .property-city-1 {
   height: 372px;
   font-size: 22px;
   color: #fff; }
-  .property-management .residential-city-1 .container {
-    height: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .property-management .residential-city-1 .container div {
-      width: 100% !important;
-      padding: 18px 0;
-      text-align: center; }
-      .property-management .residential-city-1 .container div button {
-        padding: 27px 67px;
-        font-size: 24px;
-        font-weight: 400;
-        border-radius: 0; }
   @media (max-width: 767px) {
-    .property-management .residential-city-1 {
-      height: 180px; }
-      .property-management .residential-city-1 .container div {
-        padding: 10px 0; } }
+    .property-management .property-city-1 {
+      height: 180px; } }
 
-.property-management .residential-internet .title {
-  font-size: 25px;
-  font-weight: 600;
-  padding: 45px 0 10px 0; }
-
-.property-management .residential-internet .title-underline {
-  width: 78px;
-  height: 2px;
-  border: 1px solid #333; }
-
-.property-management .residential-internet .description {
-  padding-top: 20px;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.6px;
-  line-height: 1.5;
-  text-align: center;
-  color: #7b7b7b; }
-
-.property-management .residential-internet .items {
-  padding: 25px 0 0 0; }
-  .property-management .residential-internet .items .icon-box {
-    width: 252px;
-    padding: 47px 8px 30px 8px;
-    margin: 55px 0; }
-    .property-management .residential-internet .items .icon-box .icon {
-      position: absolute;
-      top: -32px;
-      left: 50%;
-      margin-left: -32px;
-      background-color: white; }
-    .property-management .residential-internet .items .icon-box h5 {
-      margin: 0 0 10px 0;
-      font-size: 14px;
-      font-weight: bold;
-      line-height: 1; }
-    .property-management .residential-internet .items .icon-box h3 {
-      margin: 0 0 18px 0;
-      font-size: 20px;
-      line-height: 1; }
-      .property-management .residential-internet .items .icon-box h3 small {
-        color: #333; }
-    .property-management .residential-internet .items .icon-box .title-underline {
-      width: 55px;
-      margin-bottom: 16px; }
-    .property-management .residential-internet .items .icon-box ul {
-      margin: 0;
-      margin-left: 15px; }
-      .property-management .residential-internet .items .icon-box ul li {
-        padding: 6px 0;
-        font-size: 13px; }
-        .property-management .residential-internet .items .icon-box ul li:before {
-          margin-left: -10px;
-          font-size: 12px; }
-    .property-management .residential-internet .items .icon-box:nth-of-type(1) .icon i {
-      background: url(../images/app/50mbps-symmetrical.png) no-repeat center 30%; }
-    .property-management .residential-internet .items .icon-box:nth-of-type(2) .icon i {
-      background: url(../images/app/100mbps-symmetrical.png) no-repeat center 30%; }
-    .property-management .residential-internet .items .icon-box:nth-of-type(3) .icon i {
-      background: url(../images/app/500mbps-symmetrical.png) no-repeat center 30%; }
-    .property-management .residential-internet .items .icon-box:nth-of-type(4) .icon i {
-      background: url(../images/app/1000mbps-symmetrical.png) no-repeat center 30%; }
-
-.property-management .residential-internet .service-title {
-  padding: 24px 0;
-  font-size: 24px;
-  background-color: #cf1b22;
-  color: #fff;
-  text-align: center; }
-
-.property-management .residential-internet ul.service-features {
-  padding: 16px 0 50px 0;
-  margin: 0;
-  text-align: left;
-  margin-left: 15px; }
-  .property-management .residential-internet ul.service-features li {
-    padding: 7px;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 600; }
-    .property-management .residential-internet ul.service-features li:before {
-      content: "\f00c";
-      margin-left: -22px;
-      margin-top: 3px;
-      position: absolute;
-      font-family: fontawesome;
-      font-size: 14px;
-      color: #cf1b22; }
-
-.property-management .residential-city-2 {
-  height: 399px;
-  font-size: 22px;
-  color: #fff; }
-  .property-management .residential-city-2 .container {
-    height: 100%;
+.property-management .commercial-building .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .property-management .commercial-building .row > div {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .property-management .residential-city-2 .container > div {
-      width: 100% !important;
-      text-align: center;
-      padding: 18px 0; }
-      .property-management .residential-city-2 .container > div:nth-of-type(2) {
-        padding: 0; }
-      .property-management .residential-city-2 .container > div:nth-of-type(3) {
-        padding: 35px 0;
-        font-size: 15px;
-        font-style: italic;
-        text-align: center; }
-      .property-management .residential-city-2 .container > div button {
-        padding: 27px 67px;
-        font-size: 24px;
-        font-weight: 400;
-        border-radius: 0; }
-    .property-management .residential-city-2 .container .title-underline {
-      width: 78px;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .property-management .commercial-building .row .content-1 {
+    padding: 35px 40px 35px 0;
+    width: 100%; }
+    .property-management .commercial-building .row .content-1 h3 {
+      margin: 0; }
+    .property-management .commercial-building .row .content-1 .title-underline {
+      width: 80px;
       height: 2px;
-      padding: -18px 0;
-      margin: auto;
-      border: 1px solid #fff; }
-  @media (max-width: 767px) {
-    .property-management .residential-city-2 {
-      height: auto;
-      padding: 20px 0; }
-      .property-management .residential-city-2 .container > div {
-        padding: 10px 0; }
-        .property-management .residential-city-2 .container > div:nth-of-type(3) {
-          padding: 15px 0; } }
+      border: 1px solid;
+      margin-bottom: 20px; }
+    .property-management .commercial-building .row .content-1 ul {
+      padding: 16px 0 16px 0;
+      margin: 0;
+      text-align: left;
+      margin-left: 15px; }
+      .property-management .commercial-building .row .content-1 ul li {
+        padding: 10px;
+        font-size: 17px;
+        line-height: 1.5;
+        font-weight: 600; }
+        .property-management .commercial-building .row .content-1 ul li:before {
+          content: "\f00c";
+          margin-left: -25px;
+          margin-top: 3px;
+          position: absolute;
+          font-family: fontawesome;
+          font-size: 14px;
+          color: #cf1b22; }
+  .property-management .commercial-building .row .content-2 {
+    padding: 30px 0 40px 0;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center; }
+  .property-management .commercial-building .row .mask-content-1,
+  .property-management .commercial-building .row .mask-content-2 {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -99; }
+  .property-management .commercial-building .row .mask-content-1 {
+    right: 0; }
+  .property-management .commercial-building .row .mask-content-2 {
+    left: 0; }
+
+.property-management .property-tv .row:nth-of-type(1) {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .property-management .property-tv .row:nth-of-type(1) > div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .property-management .property-tv .row:nth-of-type(1) .content-1 {
+    padding: 35px 40px 35px 0; }
+    .property-management .property-tv .row:nth-of-type(1) .content-1 h3 {
+      margin: 0;
+      color: #fff; }
+    .property-management .property-tv .row:nth-of-type(1) .content-1 .title-underline {
+      width: 40px;
+      height: 2px;
+      border: 1px solid #fff;
+      margin-bottom: 25px; }
+    .property-management .property-tv .row:nth-of-type(1) .content-1 p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #fff; }
+  .property-management .property-tv .row:nth-of-type(1) .content-2 {
+    padding: 70px 0; }
+  .property-management .property-tv .row:nth-of-type(1) .mask-content-1,
+  .property-management .property-tv .row:nth-of-type(1) .mask-content-2 {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -99; }
+  .property-management .property-tv .row:nth-of-type(1) .mask-content-1 {
+    right: 0;
+    background-color: #cf1b22; }
+  .property-management .property-tv .row:nth-of-type(1) .mask-content-2 {
+    left: 0;
+    background-color: #fafafa; }
+
+.property-management .commercial-items {
+  padding: 22px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .property-management .commercial-items .icon-box {
+    width: 240px;
+    margin: 18px 15px; }
+    .property-management .commercial-items .icon-box .icon {
+      width: 96px;
+      height: 96px;
+      margin-bottom: 16px; }
+      .property-management .commercial-items .icon-box .icon i {
+        font-size: 35px;
+        line-height: 94px; }
+    .property-management .commercial-items .icon-box h3 {
+      margin: 0; }
+    .property-management .commercial-items .icon-box:nth-of-type(1) .icon i {
+      background: url(../images/app/over-air-icon.png) no-repeat center center; }
+    .property-management .commercial-items .icon-box:nth-of-type(2) .icon i {
+      background: url(../images/app/hospitality-icon.png) no-repeat center center; }
+    .property-management .commercial-items .icon-box:nth-of-type(3) .icon i {
+      background: url(../images/app/dish-satellite-icon.png) no-repeat center center; }
+
+.property-management .managed-wireless {
+  border-top: 1px solid #e5e5e5; }
+  .property-management .managed-wireless .title {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 50px 0 10px 0; }
+  .property-management .managed-wireless .title-underline {
+    width: 78px;
+    height: 2px;
+    border: 1px solid #333; }
+  .property-management .managed-wireless .description {
+    padding-top: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    text-align: center;
+    color: #7b7b7b; }
+
+.property-management .ip-access {
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5; }
+  .property-management .ip-access .title {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 50px 0 10px 0; }
+  .property-management .ip-access .title-underline {
+    width: 78px;
+    height: 2px;
+    border: 1px solid #333; }
+  .property-management .ip-access .description {
+    padding-top: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    text-align: center;
+    color: #7b7b7b; }
+  .property-management .ip-access .items {
+    padding: 25px 0 0 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .property-management .ip-access .items .icon-box {
+      margin-left: 20px;
+      margin-right: 20px; }
+
+.property-management .property-video {
+  max-height: 531px !important; }
+
+.property-management .xiber-home {
+  border-top: 1px solid #e5e5e5; }
+  .property-management .xiber-home .title {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 50px 0 10px 0; }
+  .property-management .xiber-home .title-underline {
+    width: 78px;
+    height: 2px;
+    border: 1px solid #333; }
+  .property-management .xiber-home .description {
+    padding-top: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+    text-align: center;
+    color: #7b7b7b; }
+  .property-management .xiber-home .items {
+    padding: 25px 0 0 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .property-management .xiber-home .items .icon-box {
+      margin-left: 20px;
+      margin-right: 20px; }
+      .property-management .xiber-home .items .icon-box:nth-of-type(3) .icon i {
+        background: url(../images/app/tenant-icon.png) no-repeat center 50%; }
+      .property-management .xiber-home .items .icon-box:nth-of-type(4) .icon i {
+        background: url(../images/app/home-icon.png) no-repeat center 40%; }
+      .property-management .xiber-home .items .icon-box:nth-of-type(5) .icon i {
+        background: url(../images/app/integration-icon.png) no-repeat center 50%; }
